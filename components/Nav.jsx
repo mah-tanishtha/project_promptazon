@@ -88,7 +88,7 @@ const Nav = () => {
       width={30}
       height={30}
       className="object-contain"
-      onCLick={()=> setToggleDropDown((prev) => !prev)}
+      onClick={()=> setToggleDropDown((prev) => !prev)}
     />
 
     {
@@ -107,7 +107,7 @@ const Nav = () => {
             Create Prompt
           </Link>
           <button type="button"
-          onCLick={()=>{
+          onClick={()=>{
             setToggleDropDown(false);
             signOut();
           }}
