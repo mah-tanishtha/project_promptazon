@@ -53,7 +53,7 @@ const UpdatePrompt = () => {
   };
 
   return (
-    <Suspense>
+   
        <Form
       type='Edit'
       post={post}
@@ -62,9 +62,16 @@ const UpdatePrompt = () => {
       handleSubmit={updatePrompt}
     />
 
-    </Suspense>
    
   );
 };
 
-export default UpdatePrompt;
+const Page = () => {
+  return (
+      <Suspense>
+          <UpdatePrompt />
+      </Suspense>
+  )
+}
+
+export default Page
